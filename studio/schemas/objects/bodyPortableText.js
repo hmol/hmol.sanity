@@ -52,6 +52,10 @@ export default {
     {
       type: 'code',
       title: 'Code snippet'
+    },
+    {
+      type: 'table',
+      title: 'Table'
     }
   ]
 }

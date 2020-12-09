@@ -12,6 +12,29 @@ const serializers = {
         return null
       }
       return <SyntaxHighlighter language={language || 'text'}>{node.code}</SyntaxHighlighter>
+    },
+    table: ({node = {}}) => {
+      let {rows} = node
+      const firstRow = rows.shift();
+
+      return <table>
+         <thead>
+           <tr>
+            {firstRow.cells.map((cell, index) => {
+                  return <th key={index}>{cell}</th>
+            })}
+          </tr>
+        </thead>
+        <tbody>
+        {rows.map((row, index) => {
+          return <tr key={index}>
+            {row.cells.map((cell, index) => {
+              return <td key={index}>{cell}</td>
+            })}
+          </tr>
+        })}
+        </tbody>
+      </table>
     }
   }
 }
