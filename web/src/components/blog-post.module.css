@@ -8,22 +8,27 @@
 }
 
 .mainImage {
-  display: block;
-  position: relative;
-  background: var(--color-very-light-gray);
-  padding-bottom: calc(9 / 16 * 40%);
-  @media (--media-max-small) {
-    padding-bottom: calc(9 / 16 * 100%);
-  }
-  @nest & img {
+  @media (--media-min-medium) {
     display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    vertical-align: top;
-    object-fit: cover;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+  @media (--media-max-small) {
+    display: block;
+    position: relative;
+    background: var(--color-very-light-gray);
+    padding-bottom: calc(9 / 16 * 100%);
+    @nest & img {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      vertical-align: top;
+      object-fit: cover;
+    }
   }
 }
 
