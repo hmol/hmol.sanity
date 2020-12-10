@@ -112,3 +112,9 @@ th {
   border-right: 1px solid #e2ecf3;
   border-bottom: 1px solid #e2ecf3;
 }
+
+p code { 
+    background: rgb(240, 240, 240);
+    padding-right: 0.2em;
+    padding-left: 0.2em;
+}
