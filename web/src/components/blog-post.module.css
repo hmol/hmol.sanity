@@ -8,7 +8,8 @@
 }
 
 .mainImage {
-  display: block;
+  max-width: 100%;
+  /* display: block;
   position: relative;
   background: var(--color-very-light-gray);
   padding-bottom: calc(9 / 16 * 100%);
@@ -22,12 +23,12 @@
     height: 100%;
     vertical-align: top;
     object-fit: cover;
-  }
+  } */
 }
 
 .grid {
   @media (--media-min-medium) {
-    display: grid;
+    /* display: grid; */
     grid-template-columns: 1fr;
     grid-column-gap: 2em;
     grid-template-columns: 3fr 1fr;
