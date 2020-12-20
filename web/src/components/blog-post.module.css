@@ -119,3 +119,9 @@ p code {
     padding-right: 0.2em;
     padding-left: 0.2em;
 }
+
+figcaption {
+  font-style: italic;
+  color: 	#888888;
+  text-align: center;
+}
